@@ -1,0 +1,17 @@
+{
+  "name": "账本日记",
+  "short_name": "账本日记",
+  "description": "ins风手账记账工作台",
+  "start_url": "accounting-workbench.html",
+  "display": "standalone",
+  "background_color": "#B4CFCB",
+  "theme_color": "#5C4444",
+  "icons": [
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
