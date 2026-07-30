@@ -1,6 +1,7 @@
 // TAVIA账本 Service Worker - 离线缓存
-const CACHE_NAME = 'tavia-ledger-v4';
+const CACHE_NAME = 'tavia-ledger-v5';
 const CACHE_FILES = [
+  'index.html',
   'accounting-workbench.html',
   'chart.umd.min.js',
   'apple-touch-icon.png',
@@ -42,7 +43,7 @@ self.addEventListener('fetch', (event) => {
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
         }
         return response;
-      }).catch(() => caches.match(event.request).then((c) => c || caches.match('accounting-workbench.html')))
+      }).catch(() => caches.match(event.request).then((c) => c || caches.match('index.html').then((i) => i || caches.match('accounting-workbench.html'))))
     );
   } else {
     // 静态资源：缓存优先，网络回退
