@@ -2,7 +2,7 @@
   "name": "账本日记",
   "short_name": "账本日记",
   "description": "ins风手账记账工作台",
-  "start_url": "accounting-workbench.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#B4CFCB",
   "theme_color": "#5C4444",
